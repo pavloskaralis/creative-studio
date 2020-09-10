@@ -69,11 +69,7 @@
         padding: 0 2px;
     }
 
-    /* portfolio */
-    .thumbnail {
-        height: 181px;
-        min-width: 275px;  
-    }
+
 
 @media screen and (max-width: 576px) {
     #hero-text{
@@ -84,28 +80,7 @@
     #hero-tag{
         font-size: 12px !important
     }
-    .thumbnail {
-        min-width: 25%; 
+    #footer-nav > a, #footer-nav > span {
+        font-size: 9px;
     }
 }
-/* 
-@media (min-width: 768px) {
-    .thumbnail {
-        height: 111px;
-        min-width: 169px;  
-    }
-}
-
-@media (min-width: 992px) {
-    .thumbnail {
-        height: 148px;
-        min-width: 225px;  
-    }
-}
-
-@media (min-width: 1200px) {
-    .thumbnail {
-        height: 180px;
-        min-width: 273px;  
-    }
-} */
