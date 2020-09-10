@@ -1,65 +1,77 @@
 :root {
     --custom-purple: rgb(95, 90, 200);
     --custom-mix: rgb(52.5,120,227.5);
-    --custom-blue: rgb(20,150,255);
+    --custom-blue: rgb(0, 175, 255);
 }
 
 /* header */
 
-
-#hamburger {
-    height: 14px;
-    width: 22px;
-    cursor: pointer;
-}
-#hamburger > span {
-    height: 2px; 
-    background-color: black;
-    width: 100%; 
-}
-#hamburger:hover {
-    opacity: .65;
-}
+    /* hamburger */
+    #hamburger {
+        height: 14px;
+        width: 22px;
+        cursor: pointer;
+    }
+    #hamburger > span {
+        height: 2px; 
+        background-color: black;
+        width: 100%; 
+    }
+    #hamburger:hover {
+        opacity: .65;
+    }
 
 /* main */
-#hero {
-    background: linear-gradient(300deg, var(--custom-purple) 50%, var(--custom-blue) 100%);
-}
-#hero-text {
-    line-height: 82.5px;
-    text-shadow:  2px 2px 2px rgba(0,0,0,.25);
-}
-@media screen and (max-width: 500px) {
-    #hero-text{
-        font-size: 52.5px;
-        line-height: 52.5px;
-    } 
-}
-
-#about-line, #benefits-line, #testimonials-line {
-    border-bottom: 5px solid black;
-}
-#about-line {
-    border-bottom-color: var(--custom-purple);
-}
-#benefits-line {
-    border-bottom-color: var(--custom-mix);
-}
-#testimonials-line {
-    border-bottom-color: var(--custom-blue);
-}
-
-#read {
-    color: var(--custom-purple);
-}
-
 .p-lh {
     line-height: 20px;
 }
 
-.checkbox {
-    background-color: lightgray; 
-    height: 16px;
-    padding: 0 2px;
-}
+    /* hero */
+    #hero {
+        background: linear-gradient(300deg, var(--custom-purple) 50%, var(--custom-blue) 100%);
+    }
+    #hero-text {
+        line-height: 82.5px;
+        text-shadow:  2px 2px 2px rgba(0,0,0,.25);
+        max-width: 425px;
+    }
+    #view-portfolio, #view-portfolio > a {
+        color: var(--custom-blue);
+    }
+    #hero-image {
+        background-image: url('../images/hero.png');
+        background-size: cover;
+    }
 
+    /* about */
+    #about-line, #benefits-line, #testimonials-line {
+        border-bottom: 5px solid black;
+    }
+    #about-line {
+        border-bottom-color: var(--custom-purple);
+    }
+    #benefits-line {
+        border-bottom-color: var(--custom-mix);
+    }
+    #testimonials-line {
+        border-bottom-color: var(--custom-blue);
+    }
+    #read {
+        color: var(--custom-purple);
+    }
+    .checkbox {
+        background-color: lightgray; 
+        height: 16px;
+        padding: 0 2px;
+    }
+
+@media screen and (max-width: 576px) {
+    #hero-text{
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 243px;
+    } 
+    #hero-tag{
+        font-size: 12px !important
+    }
+}

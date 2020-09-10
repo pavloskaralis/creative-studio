@@ -12,11 +12,11 @@
 </head>
 <body class="container-fluid d-flex flex-column bg-light vh-100 mx-0" style="border-top: solid 16px black;">
     <header class="position-relative container-lg d-flex justify-content-between px-0 border-bottom border-secondary">
-        <svg class="ml-n2" width="200" height="150">
+        <svg class="flex-shrink-0 ml-n2" width="200" height="150">
             <rect x="54" y="-38"  width="90" height="90" transform="rotate(45)" fill="rgb(95, 90, 200)" /> 
             <circle cx="66" cy="75" r="27" stroke="whitesmoke" fill="transparent" stroke-width="12" />
             <rect x="100" y="-30"  width="35" height="35" transform="rotate(45)" fill="rgb(95, 90, 200)" /> 
-            <rect x="105" y="-56"  width="56" height="56" transform="rotate(45)" opacity=".35" fill="rgb(20,150,255)" /> 
+            <rect x="105" y="-56"  width="56" height="56" transform="rotate(45)" opacity=".35" fill="rgb(0, 175, 255)" /> 
             <text class="h5 text-body text-uppercase font-weight-bold" x="95" y="70">creative</text>
             <text class="h5 text-body text-uppercase font-weight-bold" x="95" y="95">studio</text>
         </svg>
@@ -24,7 +24,7 @@
             info@example.com
         </div>
         <div class="d-flex flex-column justify-content-center w-75">
-            <nav class="d-none d-sm-flex justify-content-between">
+            <nav class="d-none d-md-flex justify-content-between">
                 <a href="#" class="small text-body text-uppercase font-weight-bold">home</a>
                 <a href="#" class="small text-body text-uppercase font-weight-bold">about us</a>
                 <a href="#" class="small text-body text-uppercase font-weight-bold">portfolio</a>
@@ -32,8 +32,8 @@
                 <a href="#" class="small text-body text-uppercase font-weight-bold">blog</a>
                 <a href="#" class="small text-body text-uppercase font-weight-bold">contact us</a>
             </nav>
-            <div class="d-flex justify-content-end">
-                <div id="hamburger" aria-label="open menu" class="d-flex d-sm-none flex-column justify-content-between">
+            <div class="d-flex d-md-none justify-content-end">
+                <div id="hamburger" aria-label="dropdown menu" class="d-flex flex-column justify-content-between">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,16 +42,20 @@
         </div>
     </header>
     <main class="container-lg flex-grow-1 px-0">
-        <section id="hero" class="container-fluid bg-dark d-flex p-3 p-sm-4 my-3">
-                <div class="w-25">
-                    <h1 id="hero-text" class="display-2 text-white text-uppercase word-break font-weight-bold">
-                        creative design studios
-                    </h1>
-                </div>
-                <div>
-                   
+        <section id="hero" class="container-fluid d-flex p-3 p-sm-4 my-3">
+            <div class="d-flex flex-column mr-3 mr-sm-5">
+                <h1 id="hero-text" class="display-2 text-white text-uppercase word-break font-weight-bold" style="letter-spacing: 3px">
+                    creative design studios
+                </h1>
+                <div class="d-flex flex-column flex-sm-row justify-content-between px-3 py-3 my-3" style="background-color: black;">
+                    <h6 class="text-uppercase m-0" style="color: lightgray">here's some nice work</h6>
+                    <div id="view-portfolio" class="d-flex ml-sm-3">
+                        <a href="#" class="h6 text-uppercase m-0">view portfolio</a>
+                        <div class="h6 small d-flex flex-column justify-content-center ml-1 mb-0">&rarr;</div>
+                    </div>
                 </div>
             </div>
+            <div id="hero-image" role="img" aria-label="hero image" class="position-relative flex-grow-1 my-n3 my-sm-n4 mr-n3 mr-sm-n4"></div>
         </section>
         <section class="row no-gutters row-cols-1 row-cols-sm-3 border-top border-secondary py-3 m-0">
             <article class="col pr-sm-3 pr-md-5 mb-3 mb-sm-0">
@@ -122,7 +126,7 @@
         </section>
     </main>
     <footer class="container-fluid bg-success vw-100 mx-n3">
-        <div class="container-lg px-0">
+        <!-- <div class="container-lg px-0">
             <svg class="ml-n2" width="150" height="100">
                 <rect x="35" y="-25"  width="60" height="60" transform="rotate(45)" fill="rgb(95, 90, 200)" /> 
                 <circle cx="42.5" cy="50" r="18" stroke="whitesmoke" fill="transparent" stroke-width="8" />
@@ -131,7 +135,7 @@
                 <text class="h6 text-body text-uppercase small font-weight-bold" x="62" y="46">creative</text>
                 <text class="h6 text-body text-uppercase small font-weight-bold" x="62" y="62">studio</text>
             </svg>
-        </div>     
+        </div>      -->
     </footer>
 </body>
 </html>
