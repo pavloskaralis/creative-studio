@@ -1,3 +1,7 @@
+body {
+    border-top: solid 16px black;
+}
+
 /* header */
 #logo-c {
     font-size: 56px;
@@ -38,15 +42,19 @@
 }
 
 #benefits-line {
-    border-bottom-color: rgb(60,120,205);
+    border-bottom-color: rgb(60,120,225);
 }
 
 #testimonials-line {
-    border-bottom-color: rgb(20,150,210);
+    border-bottom-color: rgb(20,150,255);
 }
 
 #read {
     color: rgb(95, 90, 200);
+}
+
+.p-lh {
+    line-height: 20px;
 }
 
 .checkbox {
@@ -54,3 +62,4 @@
     height: 16px;
     padding: 0 2px;
 }
+
