@@ -25,6 +25,14 @@
 .p-lh {
     line-height: 20px;
 }
+.bg-cover {
+    background-size: cover;
+}
+.view {
+    background-color: var(--custom-purple);
+    padding: 2px;
+    margin-right: -2px;
+}
 
     /* hero */
     #hero {
@@ -37,10 +45,6 @@
     }
     #view-portfolio, #view-portfolio > a {
         color: var(--custom-blue);
-    }
-    #hero-image {
-        background-image: url('../images/hero.png');
-        background-size: cover;
     }
 
     /* about */
@@ -65,6 +69,12 @@
         padding: 0 2px;
     }
 
+    /* portfolio */
+    .thumbnail {
+        height: 181px;
+        min-width: 275px;  
+    }
+
 @media screen and (max-width: 576px) {
     #hero-text{
         font-size: 48px;
@@ -74,4 +84,28 @@
     #hero-tag{
         font-size: 12px !important
     }
+    .thumbnail {
+        min-width: 25%; 
+    }
 }
+/* 
+@media (min-width: 768px) {
+    .thumbnail {
+        height: 111px;
+        min-width: 169px;  
+    }
+}
+
+@media (min-width: 992px) {
+    .thumbnail {
+        height: 148px;
+        min-width: 225px;  
+    }
+}
+
+@media (min-width: 1200px) {
+    .thumbnail {
+        height: 180px;
+        min-width: 273px;  
+    }
+} */
