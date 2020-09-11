@@ -3,7 +3,9 @@
     --custom-mix: rgb(52.5,120,227.5);
     --custom-blue: rgb(0, 175, 255);
 }
-
+a {
+    cursor: pointer !important;
+}
 /* header */
 
     /* hamburger */
@@ -32,6 +34,7 @@
     background-color: var(--custom-purple);
     padding: 2px;
     margin-right: -2px;
+    cursor: pointer;
 }
 
     /* hero */
